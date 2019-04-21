@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <input type="button" value="Login" (click)="login()">
+  <input type="button" value="Test" (click)="test()">
+  <form action="http://localhost:22742/File/UploadImg" method="post" enctype="multipart/form-data">
+    <input type="text" name="type" value="png"><br><br>
+    <input type="file" name="file">
+    <input type="submit" value="提交">
+</form>
+ <input type="button" value="Download" (click)="download()">
+</div>
+<img style="width: 300px;height: 300px;" src={{imgURL}}>
+
+<router-outlet></router-outlet>
